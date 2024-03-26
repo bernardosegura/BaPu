@@ -1,0 +1,32 @@
+{
+  "name": "bapu",
+  "version": "1.0.0",
+  "description": "Balanceador de puertos mediante una relación prefijo url a puerto",
+  "main": "bapu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bapu.js",
+    "build:win": "./node_modules/.bin/pkg --targets windows bapu.js",
+    "build:linux": "./node_modules/.bin/pkg --targets linux bapu.js",
+    "build:mac": "./node_modules/.bin/pkg --targets macos bapu.js",
+    "build:arm": "./node_modules/.bin/pkg --targets arm bapu.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardosegura/BaPu.git"
+  },
+  "keywords": [
+    "Balanceador",
+    "puertos"
+  ],
+  "author": "Bernardo Manuel Segura Muñoz",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/bernardosegura/BaPu/issues"
+  },
+  "homepage": "https://github.com/bernardosegura/BaPu#readme",
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "pkg": "^5.8.1"
+  }
+}
